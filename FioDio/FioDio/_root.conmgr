@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="_root"
+  DTS:DTSID="{4DA14226-ECE8-4881-9DDE-ECE72B4B2A3F}"
+  DTS:CreationName="ADO.NET:Devart.Data.MySql.MySqlConnection, Devart.Data.MySql, Version=9.3.10.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="User Id=root;Host=127.0.0.1;Database=db_roaming_costarica;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ7bt4ZpA+kSL6ZqRRj0v2AAAAAACAAAAAAAQZgAAAAEAACAAAADjTVpRlua4XmTIAD9gXIh0C0nUHwns2aRIufFIVQH01wAAAAAOgAAAAAIAACAAAAC1LX8aQRv3QFQqmnUS9IwaRbXIUEnf6ledVCpcUG0S/XAAAADmqLlD58MjNfLJY6RDocZIjcW96aSZxBfe3Q0B2kfWQ9JGHN7QuHt+VZ60IQ9gErEAc74Saj35T7ryITa8+4I4Qg6rEmHY2ALv8wTeCHVhzrAeWr3o7aHx7fTb+ykfnmia87Ao1oMZWsINdTJgApaPQAAAAKntJzTlO8r7qWvAFqhr9KryHYSeOdevkzBb+9l3nnyWkuz84hlMGh8r8Zl1pJwHaTXoE8CCJcazMwBizp1Xv2k=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
