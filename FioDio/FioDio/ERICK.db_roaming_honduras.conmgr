@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ERICK.db_roaming_honduras"
+  DTS:DTSID="{519ECEBB-41DC-4CC5-8320-8EB98C2817D5}"
+  DTS:CreationName="ADO.NET:System.Data.OleDb.OleDbConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=ERICK;Initial Catalog=db_roaming_honduras;Provider=SQLOLEDB.1;Integrated Security=SSPI;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
