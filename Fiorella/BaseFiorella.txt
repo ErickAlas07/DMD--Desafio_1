@@ -1,0 +1,97 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'fiorella')
+BEGIN
+  CREATE DATABASE fiorella;
+END;
+GO
+
+USE [fiorella]
+GO
+
+/****** Object:  Table [dbo].[RegistrosCombinacionesVentas]    Script Date: 14/9/2024 22:13:52 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[RegistrosCombinacionesVentas](
+	[Rosas] [bit] NOT NULL,
+	[Claveles] [bit] NOT NULL,
+	[Macetas] [bit] NOT NULL,
+	[Tierra] [bit] NOT NULL,
+	[Girasoles] [bit] NOT NULL,
+	[Hortensia] [bit] NOT NULL,
+	[Globos] [bit] NOT NULL,
+	[Tarjetas] [bit] NOT NULL,
+	[Orquideas] [bit] NOT NULL,
+	[Carmesi] [bit] NOT NULL,
+	[Lirios] [bit] NOT NULL,
+	[Aurora] [bit] NOT NULL,
+	[Tulipanes] [bit] NOT NULL,
+	[Liston] [bit] NOT NULL,
+	[Departamento] [nvarchar](50) NOT NULL,
+	[Pais] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+
+USE [fiorella]
+GO
+
+/****** Object:  Table [dbo].[VentasProductosPorDepartamento]    Script Date: 14/9/2024 22:13:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[VentasProductosPorDepartamento](
+	[Rosas] [int] NOT NULL,
+	[Claveles] [int] NOT NULL,
+	[Macetas] [int] NOT NULL,
+	[Tierra] [int] NOT NULL,
+	[Girasoles] [int] NOT NULL,
+	[Hortensia] [int] NOT NULL,
+	[Globos] [int] NOT NULL,
+	[Tarjetas] [int] NOT NULL,
+	[Orquideas] [int] NOT NULL,
+	[Carmesi] [int] NOT NULL,
+	[Lirios] [int] NOT NULL,
+	[Aurora] [int] NOT NULL,
+	[Tulipanes] [int] NOT NULL,
+	[Liston] [int] NOT NULL,
+	[Departamento] [nvarchar](50) NOT NULL,
+	[Pais] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+
+USE [fiorella]
+GO
+
+/****** Object:  Table [dbo].[VentasProductosPorPais]    Script Date: 14/9/2024 22:14:05 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[VentasProductosPorPais](
+	[Rosas] [int] NOT NULL,
+	[Claveles] [int] NOT NULL,
+	[Macetas] [int] NOT NULL,
+	[Tierra] [int] NOT NULL,
+	[Girasoles] [int] NOT NULL,
+	[Hortensia] [int] NOT NULL,
+	[Globos] [int] NOT NULL,
+	[Tarjetas] [int] NOT NULL,
+	[Orquideas] [int] NOT NULL,
+	[Carmesi] [int] NOT NULL,
+	[Lirios] [int] NOT NULL,
+	[Aurora] [int] NOT NULL,
+	[Tulipanes] [int] NOT NULL,
+	[Liston] [int] NOT NULL,
+	[Pais] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+
+
+

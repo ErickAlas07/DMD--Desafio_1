@@ -1,0 +1,9 @@
+SELECT 
+    Rosas, Claveles, Macetas, Tierra, Girasoles, Hortensia, Globos, Tarjetas, Orquideas, Carmesi, Lirios, Aurora, Tulipanes, Liston, Departamento, Pais, COUNT(*) as Cantidad
+FROM 
+    RegistrosCombinacionesVentas
+GROUP BY 
+    Rosas, Claveles, Macetas, Tierra, Girasoles, Hortensia, 
+    Globos, Tarjetas, Orquideas, Carmesi, Lirios, Aurora, Tulipanes, Liston, Departamento, Pais
+ORDER BY 
+    Departamento ASC, Pais ASC, Cantidad DESC
