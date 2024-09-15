@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{02257F5D-B544-4064-A660-96F63943F988}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{4AFCC43B-282F-44C3-860F-7DC8E80865FB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\OneDrive\Escritorio\UDB\DMD\Desafio 1\Preferencial y Ejecutivo.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\OneDrive\Escritorio\UDB\DMD\Desafio 1\Preferencial y Ejecutivo.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\OneDrive\Escritorio\UDB\DMD\Desafio 1\Gobierno y Turista.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\OneDrive\Escritorio\UDB\DMD\Desafio 1\Gobierno y Turista.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -3843,43 +3843,71 @@ FROM         cliente AS cli INNER JOIN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="127.2,41.6"
-          Id="Package\Tarea Flujo de datos\Costa Rica"
-          TopLeft="222.142857615741,15.2941176336529" />
+          Size="163.2,41.6"
+          Id="Package\Tarea Flujo de datos\Columna derivada"
+          TopLeft="331.428572134096,308.176470318107" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos\Ordenar 1"
+          TopLeft="558.571429760481,499.811764322474" />
+        <NodeLayout
+          Size="116.8,41.6"
+          Id="Package\Tarea Flujo de datos\Ordenar"
+          TopLeft="150.714286035117,501.647058429396" />
+        <NodeLayout
+          Size="188,41.6"
+          Id="Package\Tarea Flujo de datos\Preferencial y Ejecutivo"
+          TopLeft="117.142857392224,608.576470204157" />
+        <NodeLayout
+          Size="144.8,41.6"
+          Id="Package\Tarea Flujo de datos\Unión de todo"
+          TopLeft="338.571429292159,131.529411649415" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Tarea Flujo de datos\Gobierno y Turista"
+          TopLeft="542.857144012743,608.788234959641" />
         <NodeLayout
           Size="123.2,41.6"
           Id="Package\Tarea Flujo de datos\Honduras"
           TopLeft="477.857143874375,12.999999988605" />
         <NodeLayout
-          Size="144.8,41.6"
-          Id="Package\Tarea Flujo de datos\Unión de todo"
-          TopLeft="338.571429292159,131.529411649415" />
+          Size="127.2,41.6"
+          Id="Package\Tarea Flujo de datos\Costa Rica"
+          TopLeft="222.142857615741,15.2941176336529" />
+        <NodeLayout
+          Size="123.2,41.6"
+          Id="Package\Tarea Flujo de datos\Agregado"
+          TopLeft="175.714286088335,223.294117451333" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Tarea Flujo de datos\División condicional"
+          TopLeft="331.428572134096,383.117646723006" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
-          TopLeft="285.742857615741,56.8941176336529">
+          Id="Package\Tarea Flujo de datos.Paths[Salida de Unión de todo 1]"
+          TopLeft="410.971429292159,173.129411649415">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="102.428571676418,74.6352940157623"
+              EndConnector="-173.657143203823,50.1647058019177"
               Start="0,0"
-              End="102.428571676418,67.1352940157623">
+              End="-173.657143203823,42.6647058019177">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.2917646454196" />
+                    End="0,21.0823529009589" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.2917646454196"
-                    Point2="0,44.2917646454196"
-                    Point3="4,44.2917646454196" />
+                    Point1="0,21.0823529009589"
+                    Point2="0,25.0823529009589"
+                    Point3="-4,25.0823529009589" />
                   <mssgle:LineSegment
-                    End="98.4285716764175,44.2917646454196" />
+                    End="-169.657143203823,25.0823529009589" />
                   <mssgle:CubicBezierSegment
-                    Point1="98.4285716764175,44.2917646454196"
-                    Point2="102.428571676418,44.2917646454196"
-                    Point3="102.428571676418,48.2917646454196" />
+                    Point1="-169.657143203823,25.0823529009589"
+                    Point2="-173.657143203823,25.0823529009589"
+                    Point3="-173.657143203823,29.0823529009589" />
                   <mssgle:LineSegment
-                    End="102.428571676418,67.1352940157623" />
+                    End="-173.657143203823,42.6647058019177" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3922,36 +3950,32 @@ FROM         cliente AS cli INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="123.2,41.6"
-          Id="Package\Tarea Flujo de datos\Agregado"
-          TopLeft="175.714286088335,223.294117451333" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de Unión de todo 1]"
-          TopLeft="410.971429292159,173.129411649415">
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de ADO NET]"
+          TopLeft="285.742857615741,56.8941176336529">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-173.657143203823,50.1647058019177"
+              EndConnector="102.428571676418,74.6352940157623"
               Start="0,0"
-              End="-173.657143203823,42.6647058019177">
+              End="102.428571676418,67.1352940157623">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.0823529009589" />
+                    End="0,40.2917646454196" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.0823529009589"
-                    Point2="0,25.0823529009589"
-                    Point3="-4,25.0823529009589" />
+                    Point1="0,40.2917646454196"
+                    Point2="0,44.2917646454196"
+                    Point3="4,44.2917646454196" />
                   <mssgle:LineSegment
-                    End="-169.657143203823,25.0823529009589" />
+                    End="98.4285716764175,44.2917646454196" />
                   <mssgle:CubicBezierSegment
-                    Point1="-169.657143203823,25.0823529009589"
-                    Point2="-173.657143203823,25.0823529009589"
-                    Point3="-173.657143203823,29.0823529009589" />
+                    Point1="98.4285716764175,44.2917646454196"
+                    Point2="102.428571676418,44.2917646454196"
+                    Point3="102.428571676418,48.2917646454196" />
                   <mssgle:LineSegment
-                    End="-173.657143203823,42.6647058019177" />
+                    End="102.428571676418,67.1352940157623" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3960,10 +3984,72 @@ FROM         cliente AS cli INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="163.2,41.6"
-          Id="Package\Tarea Flujo de datos\Columna derivada"
-          TopLeft="331.428572134096,308.176470318107" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación1]"
+          TopLeft="623.514286886612,541.411764322474">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.3764706371672"
+              Start="0,0"
+              End="0,59.8764706371672">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.8764706371672" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación]"
+          TopLeft="210.12857171367,543.247058429396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65.3294117747607"
+              Start="0,0"
+              End="0,57.8294117747607">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.8294117747607" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="414.828572134096,349.776470318107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.3411764048994"
+              Start="0,0"
+              End="0,25.8411764048994">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.8411764048994" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de agregado 1]"
           TopLeft="237.314286088335,264.894117451333">
@@ -3998,40 +4084,6 @@ FROM         cliente AS cli INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Tarea Flujo de datos\División condicional"
-          TopLeft="331.428572134096,383.117646723006" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
-          TopLeft="414.828572134096,349.776470318107">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33.3411764048994"
-              Start="0,0"
-              End="0,25.8411764048994">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.8411764048994" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\Tarea Flujo de datos\Ordenar"
-          TopLeft="150.714286035117,501.647058429396" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos\Ordenar 1"
-          TopLeft="558.571429760481,499.811764322474" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Preferencial y Ejecutivo]"
           TopLeft="389.561905467429,424.717646723006">
@@ -4100,81 +4152,13 @@ FROM         cliente AS cli INNER JOIN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="47.6172165736091,35.4567769984817,82.4417578125,11.609375"
+              BoundingBox="47.617216573609,35.4567769984817,82.4417578125,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188,41.6"
-          Id="Package\Tarea Flujo de datos\Preferencial y Ejecutivo"
-          TopLeft="117.142857392224,608.576470204157" />
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Tarea Flujo de datos\Gobierno y Turista"
-          TopLeft="542.857144012743,608.788234959641" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación]"
-          TopLeft="210.12857171367,543.247058429396">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65.3294117747607"
-              Start="0,0"
-              End="0,57.8294117747607">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.8294117747607" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación1]"
-          TopLeft="623.514286886612,541.411764322474">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,67.3764706371672"
-              Start="0,0"
-              End="0,59.8764706371672">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,59.8764706371672" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Costa Rica">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Honduras">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tarea Flujo de datos\Preferencial y Ejecutivo">
     <Properties>
@@ -4198,6 +4182,22 @@ FROM         cliente AS cli INNER JOIN
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Honduras">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Costa Rica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
